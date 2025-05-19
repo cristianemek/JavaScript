@@ -52,4 +52,5 @@ const imprimePropiedades = ({ nombre, codeName, vivo, edad = 15, trajes }) => {
     console.log({edad});
     console.log({trajes});
 }
+
 imprimePropiedades( tony );
