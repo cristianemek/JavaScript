@@ -1,13 +1,15 @@
-import todoStore from "../store/todo.store";
+import todoStore, { Filters } from "../store/todo.store";
 import html from "./app.html?raw";
-import { renderTodos } from "./use-cases";
+import { renderTodos,renderPending } from "./use-cases";
 
 
 //selectores css de app.html donde insertamos el custom html
 const ElementIds = {
   TodoList: '.todo-list',
   NewTodoInput: '#new-todo-input',
-  ClearCompleted: '.clear-completed'
+  ClearCompleted: '.clear-completed',
+  TodoFilters: '.filtro',
+  PendingCount:'#pending-count',
 }
 
 /**
@@ -22,6 +24,11 @@ export const App = (elementId) => {
   const displayTodos = () =>{
     const todos = todoStore.getTodos( todoStore.getCurrentFilter());
     renderTodos(ElementIds.TodoList,todos);
+    updatePendingCount();
+  }
+
+  const updatePendingCount = () =>{
+    renderPending(ElementIds.PendingCount);
   }
 
 
@@ -37,7 +44,8 @@ export const App = (elementId) => {
   //referencias HTML
   const newDescriptionInput = document.querySelector(ElementIds.NewTodoInput);
   const todoListUl = document.querySelector(ElementIds.TodoList);
-  const ClearCompleted = document.querySelector(ElementIds.ClearCompleted);
+  const clearCompleted = document.querySelector(ElementIds.ClearCompleted);
+  const filtersUl = document.querySelectorAll(ElementIds.TodoFilters);
 
 
   //Listeners
@@ -66,10 +74,38 @@ export const App = (elementId) => {
     displayTodos();
   });
 
-  ClearCompleted.addEventListener('click',(event) =>{
+  clearCompleted.addEventListener('click',(event) =>{
     todoStore.deleteCompleted();
     displayTodos();
-  })
+  });
+
+  filtersUl.forEach( element =>{
+    
+    element.addEventListener('click', (element) =>{
+      filtersUl.forEach(el=> el.classList.remove('selected'));
+      element.target.classList.add('selected');
+
+      switch (element.target.text) {
+        case 'Todos':
+          todoStore.setFilter(Filters.All);
+          break;
+        case 'Pendientes':
+          todoStore.setFilter(Filters.Pending);
+          break;
+        case 'Completados':
+          todoStore.setFilter(Filters.Completed);
+          break;
+      
+        default:
+          break;
+      }
+      
+      displayTodos();
+
+
+    });
+
+  });
 
 
 };
