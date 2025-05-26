@@ -1,12 +1,18 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { environmentsComponent } from './concepts/01-environments';
-import { callBacksComponent } from './concepts/02-callbacks';
-import { promiseComponent } from './concepts/03-promises';
-import { promiseRaceComponent } from './concepts/04-promise-race';
+import "./style.css";
+import javascriptLogo from "./javascript.svg";
+import viteLogo from "/vite.svg";
+import { environmentsComponent } from "./concepts/01-environments";
+import { callBacksComponent } from "./concepts/02-callbacks";
+import { promiseComponent } from "./concepts/03-promises";
+import { promiseRaceComponent } from "./concepts/04-promise-race";
+import { asyncComponent } from "./concepts/05-async";
+import { asyncAwaitComponent } from "./concepts/06-async-await";
+import { asyncAwait2Component } from "./concepts/07-async-await";
+import { forAwaitComponent } from "./concepts/08-for-await";
+import { generatorFunctionsComponent } from "./concepts/09-generators";
+import { generatorsAsyncComponent } from "./concepts/10-generators-async";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
@@ -22,13 +28,15 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
-
-const element=document.querySelector('.card');
-
+const element = document.querySelector(".card");
 
 // environmentsComponent( element );
 // callBacksComponent(element);
 // promiseComponent(element);
-promiseRaceComponent(element);
-
-
+// promiseRaceComponent(element);
+// asyncComponent(element);
+// asyncAwaitComponent(element);
+// asyncAwait2Component(element);
+// forAwaitComponent(element);
+// generatorFunctionsComponent(element);
+generatorsAsyncComponent(element);
