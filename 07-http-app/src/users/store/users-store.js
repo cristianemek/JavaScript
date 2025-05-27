@@ -42,7 +42,18 @@ export default {
   onUserChange,
   reloadPage,
 
+
+    /**
+     * 
+     * @returns {User[]}
+     */
+
   getUsers: ()=> [...state.users],
+
+  /**
+   * 
+   * @returns {number}
+   */
   getCurrentPage: ()=> state.currentPage,
 
 };

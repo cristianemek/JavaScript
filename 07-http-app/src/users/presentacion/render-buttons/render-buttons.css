@@ -1,0 +1,15 @@
+button{
+    margin: 10px;
+    background-color: #e3e4ffaa;
+}
+
+#current-page{
+    font-size: 1.1rem;
+    color: #333;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
