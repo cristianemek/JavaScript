@@ -1,6 +1,7 @@
 button{
     margin: 10px;
     background-color: #e3e4ffaa;
+    border: 1px solid #a4aaff55;
 }
 
 #current-page{
