@@ -70,13 +70,9 @@ export const renderModal = (element, callback) => {
         continue;
       }
 
-      if (key === "isActive") {
-        userLike[key] = value === "on" ? true : false;
-        continue;
-      }
-
       userLike[key] = value;
     }
+    userLike.isActive = form.querySelector('[name="isActive"]').checked;
 
     await callback(userLike);
     hideModal();

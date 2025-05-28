@@ -27,9 +27,13 @@ const loadPreviousPage = async()=>{
 
 
 
-const onUserChange = () =>{
-    throw "Error, no implementado";
-
+const onUserChange = (updatedUser) =>{
+    state.users = state.users.map(user =>{
+        if(user.id === updatedUser.id){
+            return updatedUser;
+        }
+        return user;
+    })
 
 }
 

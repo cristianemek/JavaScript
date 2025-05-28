@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "isActive": false,
+      "isActive": true,
       "balance": 1397.32,
       "avatar": "http://placehold.it/32x32",
       "first_name": "Ryan",
@@ -456,6 +456,27 @@
       "first_name": "Cristian",
       "isActive": true,
       "last_name": "Rodriguez"
+    },
+    {
+      "id": "ec63",
+      "balance": 123,
+      "first_name": "cris",
+      "last_name": "qwe",
+      "isActive": true
+    },
+    {
+      "id": "a562",
+      "balance": 12333,
+      "first_name": "Ryanaa",
+      "isActive": false,
+      "last_name": "rere"
+    },
+    {
+      "id": "4773",
+      "balance": 122,
+      "first_name": "13123",
+      "last_name": "3333",
+      "isActive": false
     }
   ]
 }
