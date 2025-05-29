@@ -36,7 +36,7 @@
 
 ## 🗂️ Documentación de seguimiento
 
-Durante el curso de [devtalles](https://devtalles.com/), fui documentando mi progreso, dudas y aprendizajes en el archivo [`documentacion-seguimiento`](documentacion-seguimiento/).  
+Durante el curso de [devtalles](https://cursos.devtalles.com/), fui documentando mi progreso, dudas y aprendizajes en el archivo [`documentacion-seguimiento`](documentacion-seguimiento/).  
 Aquí encontrarás un registro detallado de cada módulo, ejercicios resueltos y reflexiones personales.
 
 ---
