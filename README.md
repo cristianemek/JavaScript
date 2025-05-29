@@ -17,6 +17,7 @@
 - 🛠️ **Proyectos pequeños** que muestran mi avance.
 - 🚦 **Buenas prácticas** y trucos útiles.
 - 🎯 **Desafíos personales** y soluciones.
+- 📖 **Documentación de seguimiento** con el paso a paso del curso.
 
 ---
 
@@ -28,6 +29,15 @@
 | Blackjack Vanilla       | Juego de Blackjack con JS puro              | [02-blackjack](02-blackjack/)     |
 | Blackjack + Vite        | Blackjack modernizado con Vite              | [04-blackjack-vite](04-blackjack-vite/) |
 | Todo App                | Lista de tareas interactiva                 | [05-todo-app](05-todo-app/)       |
+| HTTP App                | Consumo de APIs y manejo de peticiones      | [07-http-app](07-http-app/)       |
+| ESNext                  | Pruebas y ejemplos de nuevas características| [08-esnext](08-esnext/)           |
+
+---
+
+## 🗂️ Documentación de seguimiento
+
+Durante el curso de [devtalles](https://devtalles.com/), fui documentando mi progreso, dudas y aprendizajes en el archivo [`documentacion-seguimiento`](documentacion-seguimiento/).  
+Aquí encontrarás un registro detallado de cada módulo, ejercicios resueltos y reflexiones personales.
 
 ---
 
@@ -47,8 +57,18 @@
 - [x] Manipulación del DOM
 - [x] Eventos y lógica de juegos
 - [x] Módulos ES6+
-- [ ] Pruebas y optimización
-- [ ] Patrones avanzados
+- [x] Pruebas y optimización
+- [x] Patrones avanzados
+- [x] Consumo de APIs
+- [x] Deploy y buenas prácticas
+
+---
+
+## 🎉 Estado del curso
+
+> **¡Curso finalizado!**  
+> He completado todos los módulos y proyectos propuestos en el curso de devtalles.  
+> ¡Gracias por acompañarme en este viaje de aprendizaje!
 
 ---
 
